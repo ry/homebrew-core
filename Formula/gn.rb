@@ -5,7 +5,7 @@ class Gn < Formula
     :revision => "f5fc06000379fe2c11fc130431e826e860ea6aae"
   version "1547"
   sha256 "8094c4ac075f918fdb28af10e16c9d4e41481702bd14a2c06cffd50fe03de9ba"
-  depends_on "ninja" => :build
+  depends_on "ninja"
 
   def install
     system "python", "build/gen.py"
