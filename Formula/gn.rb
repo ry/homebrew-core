@@ -1,10 +1,13 @@
 class Gn < Formula
   desc "Generate Ninja - Chromium's build system"
   homepage "https://gn.googlesource.com/gn/"
+
+  # gn does not use git tags, but releases of Chromium list a specific commit
+  # id. This version of gn is used to build Chromium version 75.0.3767.2.
+  # https://github.com/chromium/chromium/blob/75.0.3767.2/DEPS#L291
   url "https://gn.googlesource.com/gn.git",
-    :revision => "f5fc06000379fe2c11fc130431e826e860ea6aae"
-  version "1547"
-  sha256 "8094c4ac075f918fdb28af10e16c9d4e41481702bd14a2c06cffd50fe03de9ba"
+    :revision => "64b846c96daeb3eaf08e26d8a84d8451c6cb712b"
+  version "1554"
   depends_on "ninja"
 
   def install
